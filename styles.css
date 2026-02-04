@@ -1,0 +1,47 @@
+h1{
+    color: rgb(127, 147, 127);
+    border: 1px dashed rgb(212, 174, 170);
+    font-size: 50px;
+}
+
+p{
+    color: rgb(81, 69, 69);
+    border: 1px dashed rgb(212, 174, 170);
+    font-size: 14;
+}
+
+.static{
+    position: static;
+    width: 500px;
+    padding: 30px;
+}
+
+.relative{
+    position: relative;
+    left: 100px;
+    width: 400px;
+}
+
+.fixed{
+    position: fixed;
+    width: 500px;
+    height: 450px;
+    bottom: 0;
+    right: 0;
+}
+
+.absolute{
+    position: absolute;
+    top: 80px;
+    left: 300px;
+}
+
+.sticky{
+    position: sticky;
+    top: 0;
+}
+
+div{
+    background: rgb(209, 209, 209);
+    position: relative;
+}
