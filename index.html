@@ -4,32 +4,182 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <style>
+       /* The main container */
+
+  .popup-card1 {
+    width: 300px;
+    height: 400px;
+    position: relative;
+    border-radius: 80px;
+    overflow: hidden;
+    cursor: pointer;
+    /* Set your image here */
+    background-image: url(Images/Rio.jpeg);
+    background-size: cover;
+    background-position: center;
+    /* Smooth transition for the expansion */
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    /* Centering the text inside */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  /* The Dark Overlay */
+  .popup-card1::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Darkens the image */
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.4s ease;
+  }
+  /* The "Text Here!" Styling */
+  .popup-card1 span {
+    position: relative;
+    color: white;
+    font-family: sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.4s ease;
+    z-index: 2;
+  }
+  /* HOVER EFFECTS */
+  .popup-card1:hover {
+    transform: scale(1.05); /* Expands slightly */
+    box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+  }
+  .popup-card1:hover::before {
+    opacity: 1; /* Shows the dark overlay */
+  }
+  .popup-card1:hover span {
+    opacity: 1; /* Shows the text */
+  }
+
+  .popup-card2 {
+    width: 300px;
+    height: 400px;
+    position: relative;
+    top: 70%;
+    left: 35%;
+    border-radius: 80px;
+    overflow: hidden;
+    cursor: pointer;
+    /* Set your image here */
+    background-image: url(Images/Foto.jpg);
+    background-size: cover;
+    background-position: center;
+    /* Smooth transition for the expansion */
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    /* Centering the text inside */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  /* The Dark Overlay */
+  .popup-card2::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Darkens the image */
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.4s ease;
+  }
+  /* The "Text Here!" Styling */
+  .popup-card2 span {
+    position: relative;
+    color: white;
+    font-family: sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.4s ease;
+    z-index: 2;
+  }
+  /* HOVER EFFECTS */
+  .popup-card2:hover {
+    transform: scale(1.05); /* Expands slightly */
+    box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+  }
+  .popup-card2:hover::before {
+    opacity: 1; /* Shows the dark overlay */
+  }
+  .popup-card2:hover span {
+    opacity: 1; /* Shows the text */
+  }
+
+ .popup-card3 {
+    width: 300px;
+    height: 400px;
+    position: relative;
+    top: 50%;
+    left: 75%;
+    border-radius: 80px;
+    overflow: hidden;
+    cursor: pointer;
+    /* Set your image here */
+    background-image: url(Images/Rio.jpeg);
+    background-size: cover;
+    background-position: center;
+    /* Smooth transition for the expansion */
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    /* Centering the text inside */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  /* The Dark Overlay */
+  .popup-card3::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Darkens the image */
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.4s ease;
+  }
+  /* The "Text Here!" Styling */
+  .popup-card3 span {
+    position: relative;
+    color: white;
+    font-family: sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.4s ease;
+    z-index: 2;
+  }
+  /* HOVER EFFECTS */
+  .popup-card3:hover {
+    transform: scale(1.05); /* Expands slightly */
+    box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+  }
+  .popup-card3:hover::before {
+    opacity: 1; /* Shows the dark overlay */
+  }
+  .popup-card3:hover span {
+    opacity: 1; /* Shows the text */
+  }
+
+    </style>
 </head>
 <body>
-    <img src="Images-Internet based Arts/alex-varela-oS7AuHjzmhw-unsplash.jpg" alt="alex-varela" class="static"
-    width="600" height="500">
-    <img src="Images-Internet based Arts/filip-kvasnak-N6ezQsnj_Ak-unsplash.jpg" alt="filip-kvasnak" class="relative"
-    width="1000" height="700">
-    <img src="Images-Internet based Arts/jan-bottinger-l2z49mZEnfo-unsplash.jpg" alt="jan-bottinger" class="absolute"
-    width="400" height="300">
-    <img src="Images-Internet based Arts/moniek-van-rosse-ajBfGZLn7uk-unsplash.jpg" alt="moniek-van-rosse-"
-    width="700" height="500">
-    <img src="Images-Internet based Arts/richard-stachmann-01RPsj2H3cg-unsplash.jpg" alt="richard-stachmann" class="fixed"
-    width="800" height="600">
-    <img src="Images-Internet based Arts/stan-jacobs--DLso_t4BFs-unsplash.jpg" alt="stan-jacobs" class="sticky"
-    width="1000" height="700">
-
-<div>
-    <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In dolorum cupiditate optio molestiae nisi voluptas, dicta accusamus quaerat earum eaque, hic impedit aut explicabo. Vel iusto deserunt quod voluptas illum?</h1>
-
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, perferendis possimus similique, sint laboriosam ea perspiciatis culpa architecto nemo ex aut provident voluptatum. Odit aut minima aperiam ratione deserunt iusto?</p>
-
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis, necessitatibus impedit nisi tempora omnis quaerat libero dignissimos, sapiente ullam, enim a nam mollitia reiciendis ipsam corporis non laboriosam delectus excepturi.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis, necessitatibus impedit nisi tempora omnis quaerat libero dignissimos, sapiente ullam, enim a nam mollitia reiciendis ipsam corporis non laboriosam delectus excepturi.</p>
-</div>
     
-    <ul>
-        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quisquam saepe dolorum corporis sequi, perspiciatis, dolore est possimus dolor unde ipsam aperiam. Autem illo minima deleniti libero! Enim, asperiores atque?</li>
-    </ul>
+
+<div class="popup-card1">
+    <span>I was born and grew up in Rio de Janeiro, I've lived there until I've finished high school </span>
+  </div>
+
+<div class="popup-card2">
+    <span>After finishing high school in Brazil I moved to the US to pursue my Bachelor's degree</span>
+  </div>
+
+<div class="popup-card3">
+    <span>In the future I have plans get my Master's degree in Europe and probably live there as my permanent home </span>
+  </div>
+
 </body>
 </html>

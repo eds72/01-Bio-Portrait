@@ -1,47 +1,120 @@
-h1{
-    color: rgb(127, 147, 127);
-    border: 1px dashed rgb(212, 174, 170);
-    font-size: 50px;
-}
-
-p{
-    color: rgb(81, 69, 69);
-    border: 1px dashed rgb(212, 174, 170);
-    font-size: 14;
-}
-
-.static{
-    position: static;
-    width: 500px;
-    padding: 30px;
+body{
+   background-color: rgb(136, 215, 255);
+   background-image: url('Images/Fundo-E.JPG');
+   background-attachment: fixed;
+   background-size: cover;
+   /* background-size: contain; */
 }
 
 .relative{
     position: relative;
-    left: 100px;
+    left: 50px;
     width: 400px;
 }
-
-.fixed{
-    position: fixed;
-    width: 500px;
-    height: 450px;
-    bottom: 0;
-    right: 0;
-}
-
-.absolute{
-    position: absolute;
-    top: 80px;
-    left: 300px;
-}
-
-.sticky{
-    position: sticky;
-    top: 0;
-}
-
-div{
-    background: rgb(209, 209, 209);
+.popup-container1 {
+    /* Required for the pop-up text positioning relative to the container */
     position: relative;
+    display: inline-block;
+    cursor: pointer; /* Changes the cursor to a hand on hover */
+}
+.popup-container1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* Styles for the pop-up text */
+.popup-text1 {
+    visibility: hidden; /* Hides the text by default */
+    width: 50px;
+    background-color: #c2c2c2;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    /* Position the pop-up text */
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* Places the text above the image */
+    left: 50%;
+    margin-left: -60px; /* Centers the text (half of the width) */
+    /* Optional: Add a fade-in transition */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+/* Show the pop-up text when hovering over the container */
+popup-container1:hover .popup-text1 {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup-container2 {
+    /* Required for the pop-up text positioning relative to the container */
+    position: relative;
+    display: inline-block;
+    cursor: pointer; /* Changes the cursor to a hand on hover */
+}
+.popup-container2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* Styles for the pop-up text */
+.popup-text2 {
+    visibility: hidden; /* Hides the text by default */
+    width: 120px;
+    background-color: #c2c2c2;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    /* Position the pop-up text */
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* Places the text above the image */
+    left: 50%;
+    margin-left: -60px; /* Centers the text (half of the width) */
+    /* Optional: Add a fade-in transition */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+/* Show the pop-up text when hovering over the container */
+popup-container2:hover .popup-text2 {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup-container3 {
+    /* Required for the pop-up text positioning relative to the container */
+    position: relative;
+    display: inline-block;
+    cursor: pointer; /* Changes the cursor to a hand on hover */
+}
+.popup-container3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* Styles for the pop-up text */
+.popup-text3 {
+    visibility: hidden; /* Hides the text by default */
+    width: 120px;
+    background-color: #c2c2c2;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    /* Position the pop-up text */
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* Places the text above the image */
+    left: 50%;
+    margin-left: -60px; /* Centers the text (half of the width) */
+    /* Optional: Add a fade-in transition */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+/* Show the pop-up text when hovering over the container */
+popup-container3:hover .popup-text3 {
+    visibility: visible;
+    opacity: 1;
 }
